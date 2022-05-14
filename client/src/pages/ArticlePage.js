@@ -10,7 +10,7 @@ const ArticlePage = () => {
   const [backendData, setbackendData] = useState([])
 
   useEffect(() => {
-    fetch(`http://desafiosharenergy.herokuapp.com/article/${params.articleId}`)
+    fetch(`https://desafiosharenergy.herokuapp.com/article/${params.articleId}`)
     .then(response => response.json())
     .then(data => setbackendData(data))
   }, [])

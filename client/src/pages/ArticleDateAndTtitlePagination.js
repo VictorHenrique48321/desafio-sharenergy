@@ -32,7 +32,7 @@ const ArticleDateAndTtitlePagination = () => {
 
     console.log("alo")
 
-    fetch(`http://desafiosharenergy.herokuapp.com/articles/${params.quantity}/title/${params.articletitle}/initialdate/${params.initialDate}/lastdate/${params.lastDate}/page/${startAt}`)
+    fetch(`https://desafiosharenergy.herokuapp.com/articles/${params.quantity}/title/${params.articletitle}/initialdate/${params.initialDate}/lastdate/${params.lastDate}/page/${startAt}`)
     .then(response => response.json())
     .then(data => setbackendData(data))
   }, []) 

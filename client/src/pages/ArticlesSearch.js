@@ -13,7 +13,7 @@ const ArticlesSearch = () => {
   const params = useParams()
 
   useEffect(() => {
-    fetch(`http://desafiosharenergy.herokuapp.com/articles/${params.quantity}/title/${params.articletitle}`)
+    fetch(`https://desafiosharenergy.herokuapp.com/articles/${params.quantity}/title/${params.articletitle}`)
     .then(response => response.json())
     .then(data => setBackendData(data))
 

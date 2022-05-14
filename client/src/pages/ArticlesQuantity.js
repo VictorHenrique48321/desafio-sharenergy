@@ -12,7 +12,7 @@ const ArticlesQuantity = () => {
   const [backendData, setBackendData] = useState([])
 
   useEffect(() => {
-    fetch(`http://desafiosharenergy.herokuapp.com/articles/${param.quantity}`)
+    fetch(`https://desafiosharenergy.herokuapp.com/articles/${param.quantity}`)
     .then(response => response.json())
     .then(data =>setBackendData(data))
   }, [])

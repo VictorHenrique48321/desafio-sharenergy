@@ -32,7 +32,7 @@ const ArticleDatePagination = () => {
 
     const startAt = comecarNoArtigo(params.pageNumber, params.quantity)
 
-    fetch(`http://desafiosharenergy.herokuapp.com/articles/${params.quantity}/initialdate/${params.initialDate}/lastdate/${params.lastDate}/page/${startAt}`)
+    fetch(`https://desafiosharenergy.herokuapp.com/articles/${params.quantity}/initialdate/${params.initialDate}/lastdate/${params.lastDate}/page/${startAt}`)
     .then(response => response.json())
     .then(data => setbackendData(data))
   }, []) 
