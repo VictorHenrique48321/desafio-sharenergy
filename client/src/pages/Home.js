@@ -9,7 +9,7 @@ const Home = () => {
   const [backendData, setbackendData] = useState([])
 
   useEffect(() => {
-    fetch("http://desafiosharenergy.herokuapp.com/articles")
+    fetch("https://desafiosharenergy.herokuapp.com/articles")
     .then(response => response.json())
     .then(data => setbackendData(data))
   }, []) 
