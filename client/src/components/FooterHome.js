@@ -1,4 +1,4 @@
-import { Box, Pagination, Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import React, { useRef, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
